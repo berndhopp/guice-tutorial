@@ -1,8 +1,7 @@
-tutorial
-==============
+Vaadin Guice tutorial
+======================
 
-Template for a simple Vaadin application that only requires a Servlet 3.0 container to run.
-
+This project contains the source code for the tutorial for using Vaadin and Guice together.
 
 Workflow
 ========
