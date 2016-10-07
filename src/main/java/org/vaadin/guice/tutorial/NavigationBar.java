@@ -14,6 +14,8 @@ public class NavigationBar extends CssLayout{
                 UIScopedView.VIEW_NAME));
         addComponent(createNavigationButton("View Scoped View",
                 ViewScopedView.VIEW_NAME));
+        addComponent(createNavigationButton("Another View Scoped View",
+                AnotherViewScopedView.VIEW_NAME));
     }
 
     private Button createNavigationButton(String caption, final String viewName) {
