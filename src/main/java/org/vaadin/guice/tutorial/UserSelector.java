@@ -16,6 +16,8 @@ public class UserSelector extends NativeSelect implements Property.ValueChangeLi
 
     UserSelector(){
         addItems(CurrentUserRole.USER, CurrentUserRole.ADMIN);
+        VaadinSession.getCurrent().setAttribute(CurrentUserRole.class, CurrentUserRole.USER);
+        setValue(CurrentUserRole.USER);
         addValueChangeListener(this);
     }
 

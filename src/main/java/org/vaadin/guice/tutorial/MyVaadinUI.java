@@ -22,20 +22,9 @@ public class MyVaadinUI extends UI {
     @Inject
     private RootLayout root;
 
-    @Inject
-    private TranslationBinder translationBinder;
-
-    @Inject
-    private PermissionEnforcer permissionEnforcer;
-
     @Override
     protected void init(VaadinRequest request) {
         setContent(root);
-        translationBinder.bind();
-
-        VaadinSession.getCurrent().setAttribute(CurrentUserRole.class, CurrentUserRole.USER);
-
-        permissionEnforcer.enforce();
     }
 
     @WebServlet(urlPatterns = "/*", name = "MyVaadinServlet", asyncSupported = true)
