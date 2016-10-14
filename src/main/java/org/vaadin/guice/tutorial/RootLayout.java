@@ -9,11 +9,11 @@ import com.vaadin.ui.VerticalLayout;
 public class RootLayout extends VerticalLayout {
 
     @Inject
-    RootLayout(NavigationBar navigationBar, ViewContainer viewContainer){
+    RootLayout(Header header, ViewContainer viewContainer){
         setSizeFull();
         setMargin(true);
         setSpacing(true);
-        addComponents(navigationBar, viewContainer);
+        addComponents(header, viewContainer);
         setExpandRatio(viewContainer, 1);
     }
 }

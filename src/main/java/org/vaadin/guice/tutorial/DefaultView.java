@@ -1,5 +1,7 @@
 package org.vaadin.guice.tutorial;
 
+import com.google.inject.Inject;
+
 import com.vaadin.guice.annotation.GuiceView;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
@@ -10,8 +12,9 @@ import com.vaadin.ui.VerticalLayout;
 public class DefaultView extends VerticalLayout implements View {
     public static final String VIEW_NAME = "";
 
-    DefaultView() {
-        addComponent(new Label("This is the default view"));
+    @Inject
+    DefaultView(DefaultViewLabel defaultViewLabel) {
+        addComponent(defaultViewLabel);
     }
 
     public void enter(ViewChangeEvent event) {
