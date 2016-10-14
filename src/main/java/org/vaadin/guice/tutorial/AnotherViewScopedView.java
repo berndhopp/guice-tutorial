@@ -3,13 +3,15 @@ package org.vaadin.guice.tutorial;
 import com.google.inject.Inject;
 
 import com.vaadin.guice.annotation.GuiceView;
+import com.vaadin.guice.security.SecureView;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
+import com.vaadin.server.VaadinSession;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 
 @GuiceView(name = AnotherViewScopedView.VIEW_NAME)
-public class AnotherViewScopedView extends VerticalLayout implements View {
+public class AnotherViewScopedView extends VerticalLayout implements SecureView {
     public static final String VIEW_NAME = "anotherView";
 
     @Inject
@@ -23,5 +25,10 @@ public class AnotherViewScopedView extends VerticalLayout implements View {
 
     public void enter(ViewChangeEvent event) {
         // This view is constructed in the init() method()
+    }
+
+    @Override
+    public boolean canAccess(String parameters) {
+        return VaadinSession.getCurrent().getAttribute(CurrentUserRole.class).equals(CurrentUserRole.ADMIN);
     }
 }

@@ -10,8 +10,8 @@ import com.vaadin.ui.HorizontalLayout;
 public class Header extends HorizontalLayout {
 
     @Inject
-    Header(NavigationBar navigationBar, LanguageSelector languageSelector) {
-        addComponents(navigationBar, languageSelector);
+    Header(NavigationBar navigationBar, LanguageSelector languageSelector, UserSelector userSelector) {
+        addComponents(navigationBar, languageSelector, userSelector);
         setExpandRatio(navigationBar, 1);
         setWidth("100%");
     }
