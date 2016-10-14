@@ -1,7 +1,7 @@
 package org.vaadin.guice.tutorial;
 
+import com.vaadin.guice.annotation.Caption;
 import com.vaadin.guice.annotation.UIScope;
-import com.vaadin.guice.i18n.Caption;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.themes.ValoTheme;
 
@@ -11,6 +11,7 @@ public class AnotherViewScopedViewButton extends Button implements Button.ClickL
 
     AnotherViewScopedViewButton(){
         addStyleName(ValoTheme.BUTTON_SMALL);
+        addClickListener(this);
     }
 
     @Override

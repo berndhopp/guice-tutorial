@@ -1,7 +1,7 @@
 package org.vaadin.guice.tutorial;
 
 import com.vaadin.guice.annotation.UIScope;
-import com.vaadin.guice.i18n.Caption;
+import com.vaadin.guice.annotation.Caption;
 import com.vaadin.ui.Label;
 
 @UIScope
