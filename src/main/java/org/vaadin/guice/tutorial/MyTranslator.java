@@ -1,9 +1,11 @@
 package org.vaadin.guice.tutorial;
 
+import com.vaadin.guice.annotation.UIScope;
 import com.vaadin.guice.i18n.Translator;
 import com.vaadin.server.VaadinService;
 import com.vaadin.server.VaadinSession;
 
+@UIScope
 public class MyTranslator implements Translator{
     @Override
     public String translate(String template) {

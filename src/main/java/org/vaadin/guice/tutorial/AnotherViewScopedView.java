@@ -10,7 +10,7 @@ import com.vaadin.server.VaadinSession;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 
-@GuiceView(name = AnotherViewScopedView.VIEW_NAME)
+@GuiceView(AnotherViewScopedView.VIEW_NAME)
 public class AnotherViewScopedView extends VerticalLayout implements SecureView {
     public static final String VIEW_NAME = "anotherView";
 

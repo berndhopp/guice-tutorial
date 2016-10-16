@@ -8,7 +8,7 @@ import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 
-@GuiceView(name = UIScopedView.VIEW_NAME)
+@GuiceView(UIScopedView.VIEW_NAME)
 public class UIScopedView extends VerticalLayout implements View {
     public static final String VIEW_NAME = "ui";
 
