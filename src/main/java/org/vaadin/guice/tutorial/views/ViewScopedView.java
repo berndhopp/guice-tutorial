@@ -8,9 +8,9 @@ import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 
+import org.vaadin.guice.tutorial.components.ViewScopedViewLabel;
 import org.vaadin.guice.tutorial.services.Greeter;
 import org.vaadin.guice.tutorial.services.ViewGreeter;
-import org.vaadin.guice.tutorial.components.ViewScopedViewLabel;
 
 @GuiceView(ViewScopedView.VIEW_NAME)
 public class ViewScopedView extends VerticalLayout implements View {

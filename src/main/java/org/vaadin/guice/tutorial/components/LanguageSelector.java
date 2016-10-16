@@ -18,7 +18,7 @@ public class LanguageSelector extends NativeSelect {
     private final Provider<TranslationBinder> translationBinder;
 
     @Inject
-    LanguageSelector(Provider<TranslationBinder> translationBinder){
+    LanguageSelector(Provider<TranslationBinder> translationBinder) {
         super(null, ImmutableList.of("german", "english"));
         this.translationBinder = translationBinder;
         setNullSelectionAllowed(false);
@@ -29,7 +29,7 @@ public class LanguageSelector extends NativeSelect {
     @Override
     public void valueChange(Property.ValueChangeEvent event) {
 
-        switch ((String)getValue()){
+        switch ((String) getValue()) {
             case "german":
                 VaadinSession.getCurrent().setLocale(Locale.GERMAN);
                 break;

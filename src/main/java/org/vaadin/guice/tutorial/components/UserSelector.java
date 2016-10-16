@@ -11,12 +11,12 @@ import com.vaadin.ui.NativeSelect;
 import org.vaadin.guice.tutorial.security.CurrentUserRole;
 
 @UIScope
-public class UserSelector extends NativeSelect implements Property.ValueChangeListener{
+public class UserSelector extends NativeSelect implements Property.ValueChangeListener {
 
     @Inject
     private PermissionEnforcer permissionEnforcer;
 
-    UserSelector(){
+    UserSelector() {
         addItems(CurrentUserRole.USER, CurrentUserRole.ADMIN);
         VaadinSession.getCurrent().setAttribute(CurrentUserRole.class, CurrentUserRole.USER);
         setValue(CurrentUserRole.USER);

@@ -10,7 +10,7 @@ public class MyPermissionEvaluator implements PermissionEvaluator {
     public boolean hasPermission(String permission) {
 
         //don't try this in production mode, but for the sake of simplicity..
-        switch (permission){
+        switch (permission) {
             case "admin":
                 return VaadinSession.getCurrent().getAttribute(CurrentUserRole.class) == CurrentUserRole.ADMIN;
             default:

@@ -11,9 +11,9 @@ import org.vaadin.guice.tutorial.views.AnotherViewScopedView;
 @UIScope
 @Caption("another_view_scoped_view_button_text")
 @NeedsPermission("admin")
-public class AnotherViewScopedViewButton extends Button implements Button.ClickListener{
+public class AnotherViewScopedViewButton extends Button implements Button.ClickListener {
 
-    AnotherViewScopedViewButton(){
+    AnotherViewScopedViewButton() {
         addStyleName(ValoTheme.BUTTON_SMALL);
         addClickListener(this);
     }

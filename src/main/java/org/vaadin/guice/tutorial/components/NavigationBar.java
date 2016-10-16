@@ -6,10 +6,10 @@ import com.vaadin.guice.annotation.UIScope;
 import com.vaadin.ui.CssLayout;
 
 @UIScope
-public class NavigationBar extends CssLayout{
+public class NavigationBar extends CssLayout {
 
     @Inject
-    NavigationBar(UIScopedViewButton uiScopedViewButton, ViewScopedViewButton viewScopedViewButton, AnotherViewScopedViewButton anotherViewScopedViewButton){
+    NavigationBar(UIScopedViewButton uiScopedViewButton, ViewScopedViewButton viewScopedViewButton, AnotherViewScopedViewButton anotherViewScopedViewButton) {
         addComponents(uiScopedViewButton, viewScopedViewButton, anotherViewScopedViewButton);
     }
 }

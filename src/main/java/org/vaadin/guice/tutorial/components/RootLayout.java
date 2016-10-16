@@ -9,7 +9,7 @@ import com.vaadin.ui.VerticalLayout;
 public class RootLayout extends VerticalLayout {
 
     @Inject
-    RootLayout(Header header, ViewContainer viewContainer){
+    RootLayout(Header header, ViewContainer viewContainer) {
         setSizeFull();
         setMargin(true);
         setSpacing(true);
