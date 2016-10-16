@@ -33,7 +33,7 @@ public class MyVaadinUI extends UI {
 
     @WebServlet(urlPatterns = "/*", name = "MyVaadinServlet", asyncSupported = true)
     @VaadinServletConfiguration(ui = MyVaadinUI.class, productionMode = false)
-    @Configuration(modules = {MyTranslationModule.class, MySecurityModule.class, BusModule.class}, basePackages = "org.vaadin.guice.tutorial")
+    @Configuration(modules = {MyTranslationModule.class, MySecurityModule.class}, basePackages = "org.vaadin.guice.tutorial")
     public static class MyVaadinServlet extends GuiceVaadinServlet{
     }
 }
