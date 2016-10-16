@@ -1,4 +1,4 @@
-package org.vaadin.guice.tutorial;
+package org.vaadin.guice.tutorial.i18n;
 
 import com.vaadin.guice.i18n.TranslationModule;
 

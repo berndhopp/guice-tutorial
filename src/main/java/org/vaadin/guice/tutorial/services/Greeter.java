@@ -1,4 +1,4 @@
-package org.vaadin.guice.tutorial;
+package org.vaadin.guice.tutorial.services;
 
 import com.vaadin.guice.annotation.UIScope;
 

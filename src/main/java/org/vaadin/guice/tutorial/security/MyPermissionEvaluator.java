@@ -1,4 +1,4 @@
-package org.vaadin.guice.tutorial;
+package org.vaadin.guice.tutorial.security;
 
 import com.vaadin.guice.annotation.UIScope;
 import com.vaadin.guice.security.PermissionEvaluator;

@@ -1,4 +1,4 @@
-package org.vaadin.guice.tutorial;
+package org.vaadin.guice.tutorial.i18n;
 
 import com.vaadin.guice.annotation.UIScope;
 import com.vaadin.guice.i18n.Translator;
@@ -10,6 +10,13 @@ public class MyTranslator implements Translator{
     @Override
     public String translate(String template) {
         switch (template){
+            case "error":
+                switch (VaadinSession.getCurrent().getLocale().getLanguage()){
+                    case "de":
+                        return "irgendwas lief falsch";
+                    default:
+                        return "something went wrong";
+                }
             case "another_view_scoped_view_button_text":
                 switch (VaadinSession.getCurrent().getLocale().getLanguage()){
                     case "de":

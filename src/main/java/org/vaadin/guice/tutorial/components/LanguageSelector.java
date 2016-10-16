@@ -1,4 +1,4 @@
-package org.vaadin.guice.tutorial;
+package org.vaadin.guice.tutorial.components;
 
 import com.google.common.collect.ImmutableList;
 import com.google.inject.Inject;

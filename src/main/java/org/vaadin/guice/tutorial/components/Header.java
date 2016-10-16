@@ -1,10 +1,13 @@
-package org.vaadin.guice.tutorial;
+package org.vaadin.guice.tutorial.components;
 
 import com.google.inject.Inject;
 
 import com.vaadin.guice.annotation.UIScope;
-import com.vaadin.ui.Alignment;
 import com.vaadin.ui.HorizontalLayout;
+
+import org.vaadin.guice.tutorial.components.LanguageSelector;
+import org.vaadin.guice.tutorial.components.NavigationBar;
+import org.vaadin.guice.tutorial.components.UserSelector;
 
 @UIScope
 public class Header extends HorizontalLayout {
