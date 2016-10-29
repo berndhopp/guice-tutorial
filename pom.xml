@@ -17,13 +17,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>org.vaadin.guice.tutorial.TutorialApplication</start-class>
 		<java.version>1.8</java.version>
-		<jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
+		<jetty.plugin.version>9.3.13.M0</jetty.plugin.version>
 		<guice-vaadin.version>2.0.0-SNAPSHOT</guice-vaadin.version>
 		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
 		<vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
 		<vaadin.version>7.7.0</vaadin.version>
 		<vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
-		<jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -87,6 +86,11 @@
 		<dependency>
 			<groupId>com.vaadin</groupId>
 			<artifactId>vaadin-themes</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>guice-vaadin</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

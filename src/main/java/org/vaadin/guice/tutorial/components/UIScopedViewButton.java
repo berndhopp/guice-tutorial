@@ -1,11 +1,11 @@
 package org.vaadin.guice.tutorial.components;
 
-import com.vaadin.guice.annotation.Caption;
 import com.vaadin.guice.annotation.UIScope;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.themes.ValoTheme;
 
 import org.vaadin.guice.tutorial.views.UIScopedView;
+import org.vaadin.i18n.annotation.Caption;
 
 @UIScope
 @Caption("ui_scoped_view_button_text")

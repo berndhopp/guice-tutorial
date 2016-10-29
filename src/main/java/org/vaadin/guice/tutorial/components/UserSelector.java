@@ -4,11 +4,11 @@ import com.google.inject.Inject;
 
 import com.vaadin.data.Property;
 import com.vaadin.guice.annotation.UIScope;
-import com.vaadin.guice.security.PermissionEnforcer;
 import com.vaadin.server.VaadinSession;
 import com.vaadin.ui.NativeSelect;
 
 import org.vaadin.guice.tutorial.security.CurrentUserRole;
+import org.vaadin.security.api.PermissionEnforcer;
 
 @UIScope
 public class UserSelector extends NativeSelect implements Property.ValueChangeListener {

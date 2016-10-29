@@ -1,8 +1,9 @@
 package org.vaadin.guice.tutorial.security;
 
 import com.vaadin.guice.annotation.UIScope;
-import com.vaadin.guice.security.PermissionEvaluator;
 import com.vaadin.server.VaadinSession;
+
+import org.vaadin.security.api.PermissionEvaluator;
 
 @UIScope
 public class MyPermissionEvaluator implements PermissionEvaluator {
