@@ -6,6 +6,6 @@ import com.vaadin.ui.Label;
 import org.vaadin.i18n.annotation.Caption;
 
 @UIScope
-@Caption("txt.default_view_label")
-public class DefaultViewLabel extends Label {
+@Caption("txt.another_view_scoped_view")
+public class AnotherViewScopedViewLabel extends Label {
 }
