@@ -29,9 +29,7 @@ public class LanguageSelector extends NativeSelect {
 
     @Override
     public void valueChange(Property.ValueChangeEvent event) {
-
         VaadinSession.getCurrent().setLocale((Locale) event.getProperty().getValue());
-
-        translationBinder.get().bind();
+        translationBinder.get().bindAll();
     }
 }
