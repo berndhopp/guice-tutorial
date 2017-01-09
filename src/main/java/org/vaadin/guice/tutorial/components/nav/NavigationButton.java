@@ -4,13 +4,13 @@ import com.vaadin.guice.annotation.UIScope;
 import com.vaadin.ui.Button;
 
 import org.vaadin.i18n.annotation.Caption;
-import org.vaadin.i18n.api.ParametrizedTranslatedComponent;
+import org.vaadin.i18n.api.HasParameters;
 
 import static com.vaadin.ui.themes.ValoTheme.BUTTON_SMALL;
 
 @UIScope
 @Caption("txt.navigation_button")
-abstract class NavigationButton extends Button implements ParametrizedTranslatedComponent, Button.ClickListener{
+abstract class NavigationButton extends Button implements HasParameters, Button.ClickListener{
 
     private final String viewName;
     private final Object[] parameters;
@@ -23,7 +23,7 @@ abstract class NavigationButton extends Button implements ParametrizedTranslated
     }
 
     @Override
-    public Object[] parameters() {
+    public Object[] getParameters() {
         return parameters;
     }
 

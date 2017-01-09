@@ -14,7 +14,7 @@ import org.vaadin.i18n.api.TranslationBinder;
 import java.util.Locale;
 
 @UIScope
-public class LanguageSelector extends NativeSelect {
+class LanguageSelector extends NativeSelect {
 
     private final Provider<TranslationBinder> translationBinder;
 
