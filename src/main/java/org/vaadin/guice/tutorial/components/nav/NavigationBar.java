@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 
 import com.vaadin.guice.annotation.UIScope;
 import com.vaadin.ui.HorizontalLayout;
+import org.vaadin.guice.tutorial.components.CurrentUserLabel;
 
 @UIScope
 public class NavigationBar extends HorizontalLayout {
@@ -15,15 +16,17 @@ public class NavigationBar extends HorizontalLayout {
         ViewScopeNavigationButton viewScopeNavigationButton,
         AnotherViewScopeNavigationButton anotherViewScopeNavigationButton,
         AdminNavigationButton adminNavigationButton,
-        UnknownViewButton unknownViewButton
-    ) {
+        UnknownViewButton unknownViewButton,
+        CurrentUserLabel currentUserLabel
+        ) {
         addComponents(
                 defaultNavigationButton,
                 uiScopeNavigationButton,
                 viewScopeNavigationButton,
                 anotherViewScopeNavigationButton,
                 adminNavigationButton,
-                unknownViewButton
+                unknownViewButton,
+                currentUserLabel
         );
 
         setSpacing(true);
